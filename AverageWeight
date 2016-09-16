@@ -1,0 +1,46 @@
+/* Jacqueline Macias Lab2-inclass */
+public class AverageWeights {
+	public static final int NUM_REGIONS = 6;
+	private int[] weightArray;
+	private String[] regionArray;
+	/* Constructor */
+	public AverageWeights() { 
+		weightArray = new int[NUM_REGIONS];
+		for (int i=0; i<NUM_REGIONS; i++){
+			weightArray[i] = 0; 
+		}
+		regionArray = new String[NUM_REGIONS];
+		for (int i=0; i<NUM_REGIONS; i++){
+			regionArray[i] = new String();
+		}
+	}
+	// Setter
+	public void setRegionValues (int index, String regionName, int regionWeight){
+		regionArray[index] = regionName;
+		weightArray[index] = regionWeight; 
+	}
+	// toString
+	public String toString() { 
+		String output = new String();
+		output = "\tRegion\t\tWeight in pounds\n";
+		for (int i=0; i<NUM_REGIONS; i++) {
+			output =  output + "\t" + t\regionArray[i] + "\t\t" + Weightarray[i] + "\N";
+		}
+		returnoutput;
+		System.out.println(worldWeights);
+
+		}
+	}
+	// MAIN 
+	public static void main(String[] args) {
+		AverageWeights worldWeights;
+		worldWeights = new AverageWeights();
+		worldWeights.setRegionValues(0, "Africa", 134);
+		worldWeights.setRegionValues(1, "Asia", 127);
+		worldWeights.setRegionValues(2, "Europe", 156);
+		worldWeights.setRegionValues(3, "Latin America", 150);
+		worldWeights.setRegionValues(4, "North America", 178);
+		worldWeights.setRegionValues(5, "Oceania", 163);
+
+	}
+}
